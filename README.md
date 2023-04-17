@@ -84,31 +84,31 @@ Estimated Total Size (MB): 0.62
 
 训练中，打印训练集和测试集样本数量，打印模型结构，显示进度条
 
-![](D:/Project/Watermark_detection/figs/2.png)
+![](figs/2.png)
 
 训练结束，执行测试，测试结束后打印测试集上的准确率
 
-![](D:/Project/Watermark_detection/figs/3.png)
+![](figs/3.png)
 
 日志可视化保存在figs目录下
 
-![](D:/Project/Watermark_detection/figs/log.png)
+![](figs/log.png)
 
 ### 测试
 
 测试结果如下
 
-![](D:/Project/Watermark_detection/figs/4.png)
+![](figs/4.png)
 
 ### 可视化
 
 可以在此处选择想要可视化的样本
 
-![](D:/Project/Watermark_detection/figs/5.png)
+![](figs/5.png)
 
 可视化效果如下
 
-![](D:/Project/Watermark_detection/figs/1.png)
+![](figs/1.png)
 
 大标题ground truth表示这个图像原本的标签为多少
 
