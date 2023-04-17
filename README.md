@@ -1,5 +1,9 @@
 # 介绍
 本项目使用神经网络检测图像中的隐式水印
+### 作者
+[Yuyao Ge](https://github.com/GeYuYao-hub) : 神经网络代码构建, 神经网络的训练, 架构设计
+[Lizhe Chen](https://github.com/574118090) : 图像处理, 水印嵌入, 数据集构建
+
 # 需要安装的库
 
 * numpy 
@@ -74,47 +78,37 @@ Estimated Total Size (MB): 0.62
 ### weights
 
 用于存储训练好的模型权重文件
-
-# 调用关系
-
-main_gpu是核心函数，由他调用所有的其他文件
-
-在训练时，main_gpu首先调用torch_dataset获得数据集，然后调用models文件获得模型结构，然后开始训练，训练结束后调用utils中的绘图函数。
-
-在测试时，main_gpu首先调用torch_dataset获得数据集，然后调用models文件获得模型结构，然后开始测试。
-
-在可视化时，main_gpu首先调用torch_dataset获得数据集，然后调用models文件获得模型结构，然后开始预测指定的样本，然后调用utils中img2dct函数将图像经过dct变换将水印嵌入，然后再调用utils中sub_fig可视化。
 # 功能展示
 
 ### 训练功能
 
 训练中，打印训练集和测试集样本数量，打印模型结构，显示进度条
 
-![](D:\Project\Watermark_detection\figs\2.png)
+![](D:/Project/Watermark_detection/figs/2.png)
 
 训练结束，执行测试，测试结束后打印测试集上的准确率
 
-![](D:\Project\Watermark_detection\figs\3.png)
+![](D:/Project/Watermark_detection/figs/3.png)
 
 日志可视化保存在figs目录下
 
-![](D:\Project\Watermark_detection\figs\log.png)
+![](D:/Project/Watermark_detection/figs/log.png)
 
 ### 测试
 
 测试结果如下
 
-![](D:\Project\Watermark_detection\figs\4.png)
+![](D:/Project/Watermark_detection/figs/4.png)
 
 ### 可视化
 
 可以在此处选择想要可视化的样本
 
-![](D:\Project\Watermark_detection\figs\5.png)
+![](D:/Project/Watermark_detection/figs/5.png)
 
 可视化效果如下
 
-![](D:\Project\Watermark_detection\figs\1.png)
+![](D:/Project/Watermark_detection/figs/1.png)
 
 大标题ground truth表示这个图像原本的标签为多少
 
